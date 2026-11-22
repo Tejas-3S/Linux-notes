@@ -3,7 +3,7 @@
 My personal notes and projects while learning Linux.
 
 ## Notes
-- (coming soon)
+- [Notes](notes/README.md)
 
 ## Projects
 - (coming soon)
