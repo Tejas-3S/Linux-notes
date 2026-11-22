@@ -1,2 +1,9 @@
-# Linux-notes
-This reop is to showcase my linux knowledge and skills . With notes and projects.
+# Linux Notes
+
+My personal notes and projects while learning Linux.
+
+## Notes
+- (coming soon)
+
+## Projects
+- (coming soon)
