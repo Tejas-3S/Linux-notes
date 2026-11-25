@@ -1266,12 +1266,71 @@ Checks whether the cron service is running.
 
 ---
 
-# Conclusion
+# 14. SSH (Secure Shell)
 
-These notes cover the Linux fundamentals learned so far, from basic terminal commands to file management, permissions, users and groups, processes, system services, environment variables, archiving, compression, and cron jobs.
+SSH (Secure Shell) is a protocol used to securely connect to remote computers and servers.
 
-The best way to learn Linux is to practise these commands regularly in a Linux environment such as Ubuntu.
+## 14.1 ssh-keygen
 
-**Keep practising, keep experimenting, and keep learning Linux!**
+Generates a pair of SSH keys (public and private keys).
+
+    ssh-keygen
+
+## 14.2 Generate an RSA SSH Key
+
+Generates an RSA SSH key pair with a key size of 4096 bits.
+
+    ssh-keygen -t rsa -b 4096
+
+- `-t rsa` — Specifies the RSA key type.
+- `-b 4096` — Sets the key size to 4096 bits.
+
+**Important:**
+- Private key: Keep it secret. Never share it.
+- Public key: Can be shared with GitHub or remote servers.
+
+## 14.3 Append Operator (`>>`)
+
+The `>>` operator appends content to the end of a file without overwriting existing content.
+
+    echo "New SSH key" >> ~/.ssh/authorized_keys
+
+**Difference:**
+- `>` — Overwrites existing file content.
+- `>>` — Appends content while preserving existing data.
+
+## 14.4 Restart SSH Service
+
+Restarts the SSH service.
+
+    sudo service ssh restart
+
+## 14.5 ssh-copy-id
+
+Copies your public SSH key to a remote server for key-based authentication.
+
+**Syntax:**
+
+    ssh-copy-id username@remote_ip
+
+Example:
+
+    ssh-copy-id rahul@192.168.1.100
+
+It usually asks for the remote user's password during the initial setup.
+
+After successful setup, you can connect using your SSH key without entering the account password each time.
+
+## 14.6 Install ssh-copy-id Using Homebrew
+
+Installs the `ssh-copy-id` utility using Homebrew on macOS.
+
+    brew install ssh-copy-id
+
+**Note:** Homebrew  commonly used on macOS.
+
+
+
+
 
 ---
