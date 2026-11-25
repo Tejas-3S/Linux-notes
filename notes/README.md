@@ -21,6 +21,7 @@ The purpose of this repository is to maintain simple, beginner-friendly Linux no
 11. [Configuration Files](#11-configuration-files)
 12. [Archiving and Compression](#12-archiving-and-compression)
 13. [Cron Jobs and Task Scheduling](#13-cron-jobs-and-task-scheduling)
+14. [ssh server handling](#14-SSH-(secure-shell))
 
 ---
 
